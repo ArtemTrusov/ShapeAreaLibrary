@@ -46,13 +46,13 @@
         {
             if (sideA <= 0 || sideB <= 0 || sideC <= 0)
             {
-                throw new ArgumentException(string.Format("At least one of the passed triangle sides ( {0}; {1}; {2} ) " +
+                throw new ArgumentOutOfRangeException(string.Format("At least one of the passed triangle sides ( {0}; {1}; {2} ) " +
                     "is zero or negative number", sideA, sideB, sideC));
             }
 
             if (sideA >= sideB + sideC || sideB >= sideA + sideC || sideC >= sideA + sideB)
             {
-                throw new ArgumentException(string.Format("One of the passed triangle sides ( {0}; {1}; {2} ) " +
+                throw new ArgumentOutOfRangeException(string.Format("One of the passed triangle sides ( {0}; {1}; {2} ) " +
                     "is the sum of the other two or greater", sideA, sideB, sideC));
             }
 

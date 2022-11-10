@@ -27,7 +27,7 @@
         {
             if (radius <= 0)
             {
-                throw new ArgumentException(string.Format("Passed radius ( {0} ) " +
+                throw new ArgumentOutOfRangeException(string.Format("Passed radius ( {0} ) " +
                     "is zero or less than zero", radius));
             }
             return true;
