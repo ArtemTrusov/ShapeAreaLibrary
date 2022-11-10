@@ -1,4 +1,4 @@
-﻿namespace ShapeAreaLibrary
+﻿namespace ShapeAreaLibrary.shape
 {
     /// <summary>Represent a circle.</summary>
     public class Circle : Shape
@@ -27,7 +27,7 @@
         {
             if (radius <= 0)
             {
-                throw new ArgumentException(String.Format("Passed radius ( {0} ) " +
+                throw new ArgumentException(string.Format("Passed radius ( {0} ) " +
                     "is zero or less than zero", radius));
             }
             return true;

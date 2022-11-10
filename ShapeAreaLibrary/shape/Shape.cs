@@ -1,4 +1,4 @@
-﻿namespace ShapeAreaLibrary
+﻿namespace ShapeAreaLibrary.shape
 {
     /// <summary>Represent an abstract shape.</summary>
     public abstract class Shape
