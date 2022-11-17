@@ -3,7 +3,7 @@
     /// <summary>Represent a circle.</summary>
     public class Circle : Shape
     {
-        public double Radius { get; set; }
+        public double Radius { get; }
 
         /// <summary>Initializes a new instance of the <see cref="Circle" /> class.</summary>
         /// <param name="shapeName">Name of the shape.</param>
