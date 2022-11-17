@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShapeAreaLibrary", "ShapeAreaLibrary\ShapeAreaLibrary.csproj", "{3851B0F6-A405-491A-914E-7F850D2AFFBE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeAreaLibrary", "ShapeAreaLibrary\ShapeAreaLibrary.csproj", "{3851B0F6-A405-491A-914E-7F850D2AFFBE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShapeAreaTests", "ShapeAreaTests\ShapeAreaTests.csproj", "{B57A483E-E99B-4A6D-BBF4-E6F4B837ADD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeAreaTests", "ShapeAreaTests\ShapeAreaTests.csproj", "{B57A483E-E99B-4A6D-BBF4-E6F4B837ADD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
