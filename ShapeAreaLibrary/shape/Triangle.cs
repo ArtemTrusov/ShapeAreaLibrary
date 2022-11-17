@@ -3,9 +3,9 @@
     /// <summary>Represents a triangle.</summary>
     public class Triangle : Shape
     {
-        public double sideA { get; set; }
-        public double sideB { get; set; }
-        public double sideC { get; set; }
+        public double SideA { get; }
+        public double SideB { get; }
+        public double SideC { get; }
 
 
         /// <summary>Initializes a new instance of the <see cref="Triangle" /> class.</summary>
@@ -17,9 +17,9 @@
         {
             if (IsExist(sideA, sideB, sideC))
             {
-                this.sideA = sideA;
-                this.sideB = sideB;
-                this.sideC = sideC;
+                SideA = sideA;
+                SideB = sideB;
+                SideC = sideC;
             }
         }
 
@@ -27,8 +27,8 @@
         /// <returns>Area of a triangle.</returns>
         public override double Area()
         {
-            double halfPerimeter = (sideA + sideB + sideC) / 2;
-            double area = Math.Round(Math.Sqrt(halfPerimeter * (halfPerimeter - sideA) * (halfPerimeter - sideB) * (halfPerimeter - sideC)), 2);
+            double halfPerimeter = (SideA + SideB + SideC) / 2;
+            double area = Math.Round(Math.Sqrt(halfPerimeter * (halfPerimeter - SideA) * (halfPerimeter - SideB) * (halfPerimeter - SideC)), 2);
             return area;
         }
 
@@ -36,9 +36,9 @@
         /// <returns><c>true</c> if is right triangle; otherwise, <c>false</c>.</returns>
         public bool IsRightTriangle()
         {
-            bool isRight = Math.Pow(sideA, 2) == Math.Pow(sideB, 2) + Math.Pow(sideC, 2)
-                               || Math.Pow(sideB, 2) == Math.Pow(sideA, 2) + Math.Pow(sideC, 2)
-                               || Math.Pow(sideC, 2) == Math.Pow(sideA, 2) + Math.Pow(sideB, 2);
+            bool isRight = Math.Pow(SideA, 2) == Math.Pow(SideB, 2) + Math.Pow(SideC, 2)
+                               || Math.Pow(SideB, 2) == Math.Pow(SideA, 2) + Math.Pow(SideC, 2)
+                               || Math.Pow(SideC, 2) == Math.Pow(SideA, 2) + Math.Pow(SideB, 2);
             return isRight;
         }
 
